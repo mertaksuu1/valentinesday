@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Timeline</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCzx-502rZlA7-7l-GWf4eC7d0j7a3pzgk",
+          authDomain: "valentines-project-e26ba.firebaseapp.com",
+          projectId: "valentines-project-e26ba",
+          storageBucket: "valentines-project-e26ba.firebasestorage.app",
+          messagingSenderId: "143968449335",
+          appId: "1:143968449335:web:83426c6814b32bbae5a0b2",
+          measurementId: "G-MMFLEBSH46"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        window.db = db;
+
+
+      </script>
+
+
+      
+</head>
+<body>
+    
+    <header>
+        <h1>💖 Our Love Story 💖</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="plans.html">Our Future Plans</a></li>
+                <li><a href="sayac.html">Time</a></li>
+                <li><a href="game.html">Game</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="special-dates">
+        <div class="date-box">
+            <h3>18 October 2022</h3>
+            <p>The date you became my love</p>
+        </div>
+        <div class="date-box">
+            <h3>19 December 2023</h3>
+            <p>Proposal Day 💍</p>
+        </div>
+        <div class="date-box">
+            <h3>15 December 2023</h3>
+            <p>First Trip Abroad ✈️</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="event">
+            <h2>The first photo that I took</h2>
+            <img src="photos/ilkfoto.jpeg" alt="The first photo that I took." class="event-photo">
+            <p>On this day, everything began...</p>
+            <span>17 Oct 2022</span>
+        </div>
+        <div class="event">
+            <h2>The first flower that I bought for you</h2>
+            <img src="/photos/cicek.jpeg" alt="The first flower that I bought for you." class="event-photo">
+            <p>A beautiful moment of our love story.</p>
+            <span>19 Dec 2023</span>
+        </div>
+        <div class="event">
+            <h2>The first birthday we celebrated together</h2>
+            <img src="/photos/birthday.jpeg" alt="The first birthday we celebrated together" class="event-photo">
+            <p>The most special day on my life.</p>
+            <span>15 Dec 2023</span>
+        </div>
+        <div class="event">
+            <h2>The black cat that came between us</h2>
+            <img src="/photos/karakedi.jpeg" alt="The black cat that came between us" class="event-photo">
+            <p>No one can come between us.</p>
+            <span>17 Oct 2022</span>
+        </div>
+        <div class="event">
+            <h2>Magical Summer</h2>
+            <img src="/photos/magical.jpeg" alt="The black cat that came between us" class="event-photo">
+            <p>It was the best summer of my life.</p>
+            <span>19 Dec 2023</span>
+        </div>
+        <div class="event">
+            <h2>Our first trip abroad</h2>
+            <img src="/photos/bosna.jpeg" alt="Our first trip abroad" class="event-photo">
+            <p>Exploring the world together for the first time!</p>
+            <span>15 Dec 2023</span>
+        </div>
+        <div class="event">
+            <h2>When you met my family</h2>
+            <img src="/photos/ailetanisma.jpeg" alt="When you met my family" class="event-photo">
+            <p>Extremely exciting times...</p>
+            <span>17 Oct 2022</span>
+        </div>
+        <div class="event">
+            <h2>Istanbul...</h2>
+            <img src="/photos/istanbul.jpeg" alt="Istanbul..." class="event-photo">
+            <p>A beautiful moment of our love story.</p>
+            <span>19 Dec 2023</span>
+        </div>
+        <div class="event">
+            <h2>Fethiye..</h2>
+            <img src="/photos/fethiye.jpeg" alt="Fethiye..." class="event-photo">
+            <p>Love you so much</p>
+            <span>15 Dec 2023</span>
+        </div>
+        <div class="event">
+            <h2>To many more my love..</h2>
+            <img src="/photos/WhatsApp Image 2025-02-12 at 17.43.33.jpeg" alt="To many more my love" class="event-photo">
+            <p>I want every moment to be with you.</p>
+            <span>15 Dec 2023</span>
+        </div>
+    </div>
+
+
+    <div id="floating-elements"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
